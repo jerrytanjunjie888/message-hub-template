@@ -1,0 +1,16 @@
+server:
+  port: 3006
+spring:
+  datasource:
+    url: jdbc:postgresql://${HOST:10.71.0.132}:${PORT:60901}/${DATABASE_NAME:messagehub}
+    driver-class-name: org.postgresql.Driver
+    username: ${USERNAME:messagehub}
+    password: ${PASSWORD:4c614b4a7c09f0edc9a6d4af2c10091f}
+  application:
+    name: message-hub-template
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    show-sql: true
+
+

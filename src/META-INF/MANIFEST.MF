@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Class-Path: postgresql-42.2.5.jar javassist-3.23.2-GA.jar spring-aspec
+ ts-5.1.8.RELEASE.jar javax.annotation-api-1.3.2.jar jaxb-api-2.3.1.ja
+ r tomcat-embed-el-9.0.21.jar mybatis-spring-1.3.2.jar guava-20.0.jar 
+ springfox-core-2.9.2.jar spring-session-core-2.1.7.RELEASE.jar jandex
+ -2.0.5.Final.jar tomcat-embed-websocket-9.0.21.jar spring-boot-starte
+ r-json-2.1.6.RELEASE.jar mybatisplus-spring-boot-starter-1.0.4.jar lo
+ g4j-slf4j-impl-2.11.2.jar spring-expression-5.1.8.RELEASE.jar springf
+ ox-schema-2.9.2.jar swagger-annotations-1.5.21.jar spring-boot-starte
+ r-web-2.1.6.RELEASE.jar jackson-databind-2.9.9.jar commons-lang-2.6.j
+ ar spring-boot-starter-jdbc-2.1.6.RELEASE.jar springfox-spi-2.9.2.jar
+  spring-webmvc-5.1.8.RELEASE.jar spring-plugin-core-1.2.0.RELEASE.jar
+  mybatis-spring-boot-autoconfigure-1.3.2.jar dom4j-2.1.1.jar persiste
+ nce-api-1.0.jar mapstruct-1.2.0.Final.jar spring-boot-starter-log4j2-
+ 2.1.6.RELEASE.jar spring-boot-starter-aop-2.1.6.RELEASE.jar log4j-cor
+ e-2.11.2.jar fastjson-1.2.49.jar spring-beans-5.1.8.RELEASE.jar hiber
+ nate-validator-6.0.17.Final.jar commons-io-2.6.jar spring-tx-5.1.8.RE
+ LEASE.jar validation-api-2.0.1.Final.jar swagger-models-1.5.21.jar sp
+ ringfox-spring-web-2.9.2.jar lombok-1.18.8.jar druid-1.1.1.jar javax.
+ persistence-api-2.2.jar spring-boot-2.1.6.RELEASE.jar jboss-logging-3
+ .3.2.Final.jar snakeyaml-1.23.jar spring-core-5.1.8.RELEASE.jar mybat
+ is-plus-2.1.2.jar jackson-annotations-2.9.0.jar log4j-jul-2.11.2.jar 
+ spring-context-5.1.8.RELEASE.jar springfox-swagger2-2.9.2.jar spring-
+ web-5.1.8.RELEASE.jar javax.activation-api-1.2.0.jar spring-boot-star
+ ter-2.1.6.RELEASE.jar classmate-1.4.0.jar commons-lang3-3.4.jar sprin
+ g-boot-autoconfigure-2.1.6.RELEASE.jar spring-jcl-5.1.8.RELEASE.jar s
+ lf4j-api-1.7.26.jar jsqlparser-1.1.jar log4j-api-2.11.2.jar jackson-d
+ atatype-jdk8-2.9.9.jar hibernate-core-5.3.10.Final.jar jackson-core-2
+ .9.9.jar springfox-swagger-ui-2.9.2.jar javax.transaction-api-1.3.jar
+  spring-aop-5.1.8.RELEASE.jar HikariCP-3.2.0.jar jackson-module-param
+ eter-names-2.9.9.jar tomcat-embed-core-9.0.21.jar jackson-datatype-js
+ r310-2.9.9.jar spring-boot-devtools-2.1.6.RELEASE.jar gson-2.8.1.jar 
+ spring-orm-5.1.8.RELEASE.jar spring-boot-starter-tomcat-2.1.6.RELEASE
+ .jar spring-boot-starter-data-jpa-2.1.6.RELEASE.jar antlr-2.7.7.jar s
+ pringfox-swagger-common-2.9.2.jar mybatis-spring-boot-starter-1.3.2.j
+ ar spring-jdbc-5.1.8.RELEASE.jar jul-to-slf4j-1.7.26.jar spring-data-
+ jpa-2.1.9.RELEASE.jar spring-plugin-metadata-1.2.0.RELEASE.jar common
+ s-fileupload-1.3.2.jar mybatis-3.4.6.jar byte-buddy-1.9.13.jar spring
+ -data-commons-2.1.9.RELEASE.jar hibernate-commons-annotations-5.0.4.F
+ inal.jar aspectjweaver-1.9.4.jar
+Main-Class: 
+

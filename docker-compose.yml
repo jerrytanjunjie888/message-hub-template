@@ -1,0 +1,23 @@
+version: '3'
+services:
+  message-hub-template:
+    image: registry-cn-local.subsidia.org/message-hub/message-hub-template
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - HOST=10.71.0.132
+      - PORT=60901
+      - USERNAME=messagehub
+      - PASSWORD=4c614b4a7c09f0edc9a6d4af2c10091f
+      - DATABASE_NAME=messagehub
+    networks:
+      backend:
+        aliases:
+          - message-hub-template
+    ports:
+      - 3006:3006
+networks:
+  backend:
+    external:
+      name: messagehub-backend

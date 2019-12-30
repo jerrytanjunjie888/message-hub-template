@@ -1,0 +1,236 @@
+@hostname = localhost
+@port = 3006
+@host = {{hostname}}:{{port}}
+@basePath = /api/v2
+@baseURL = {{host}}{{basePath}}
+@contentType = application/json
+
+###
+
+post http://{{baseURL}}/insert/template
+Content-Type: application/json
+
+{
+  "communicationChannel": "WeChat",
+  "officialAccount": "officialAccount",
+  "templateSubject": "templateSubject",
+  "templateContent": "templateContent",
+  "templateLanguageCode": "chinese",
+  "templateCountryCode": "china",
+  "communicationChannel": "WeChat",
+  "templateAttributes": "templateAttributes",
+  "cardConnection": "cardConnection",
+  "smallRoutine": "smallRoutine",
+  "pagePath": "pagePath",
+  "templateRemark": "templateRemark",
+  "startEffectiveTime": "2019-11-06 11:11:11",
+  "lastEffectiveTime": "2019-11-06 11:11:11",
+  "creator": "jerry"
+}
+
+
+###
+
+post http://{{baseURL}}/templates
+Content-Type: application/json
+
+
+{
+  "communicationChannel": "WeChat",
+  "uuid": "template-weChat-4aae1c6306f54527acdc6df9ffcf6d3b",
+  "eventTypeUuid": "event-weChat-7395d6ae91ed4a26b2a6a62f81753a9b",
+  "templateLanguageCode": "chinese",
+  "templateCountryCode": "china",
+  "templateAttributes": "templateAttributes"
+}
+
+{
+  "code": "00",
+  "success": true,
+  "msg": "success",
+  "data": {
+    "uuid": "template-weChat-4aae1c6306f54527acdc6df9ffcf6d3b",
+    "eventTypeUuid": "event-weChat-7395d6ae91ed4a26b2a6a62f81753a9b",
+    "officialAccount": "officialAccount",
+    "templateSubject": "templateSubject",
+    "templateContent": "templateContent",
+    "templateLanguageCode": "chinese",
+    "templateCountryCode": "china",
+    "communicationChannel": "WeChat",
+    "templateAttributes": "templateAttributes",
+    "cardConnection": "cardConnection",
+    "smallRoutine": "smallRoutine",
+    "pagePath": "pagePath",
+    "templateRemark": "templateRemark",
+    "startEffectiveTime": "2019-11-06T03:11:11.000+0000",
+    "lastEffectiveTime": "2019-11-06T03:11:11.000+0000",
+    "creator": "jerry",
+    "gmtCreated": "2019-11-21T07:47:33.731+0000",
+    "modifier": null,
+    "gmtModified": null,
+    "isDeleted": 1,
+    "isDeletedVal": 1
+  },
+  "time": "2019-11-21T07:47:33.736+0000"
+}
+###
+
+post http://{{baseURL}}/insert/template
+Content-Type: application/json
+
+{
+  "communicationChannel": "Sms",
+  "templateChannel": "templateChannel",
+  "templateContent": "templateContent",
+  "templateLanguageCode": "chinese",
+  "templateCountryCode": "china",
+  "templateAttributes": "templateAttributes",
+  "startEffectiveTime": "2019-11-11 12:12:12",
+  "lastEffectiveTime": "2019-11-11 12:12:12",
+  "creator":"jerry"
+}
+
+###
+
+post http://{{baseURL}}/templates
+Content-Type: application/json
+
+{
+  "communicationChannel": "Sms",
+  "uuid": "template-sms-b264839360d54735861d5c55ba01ccc0",
+  "eventTypeUuid": "event-sms-ab138b9636a2425e9155d261da3134a0",
+  "templateLanguageCode": "chinese",
+  "templateCountryCode": "china",
+  "startEffectiveTime": "2018-11-11 12:12:12",
+  "lastEffectiveTime": "2020-11-11 12:12:12",
+  "templateAttributes": "templateAttributes"
+}
+
+{
+  "code": "00",
+  "success": true,
+  "msg": "success",
+  "data": {
+    "uuid": "template-sms-b264839360d54735861d5c55ba01ccc0",
+    "eventTypeUuid": "event-sms-ab138b9636a2425e9155d261da3134a0",
+    "templateChannel": "templateChannel",
+    "templateContent": "templateContent",
+    "templateLanguageCode": "chinese",
+    "templateCountryCode": "china",
+    "communicationChannel": "Sms",
+    "templateAttributes": "templateAttributes",
+    "startEffectiveTime": "2019-11-10T16:12:12.000+0000",
+    "lastEffectiveTime": "2019-11-10T16:12:12.000+0000",
+    "creator": null,
+    "gmtCreated": "2019-11-21T07:46:18.119+0000",
+    "modifier": null,
+    "gmtModified": null,
+    "isDeleted": 1,
+    "isDeletedVal": 1
+  },
+  "time": "2019-11-21T07:46:18.127+0000"
+}
+
+###
+
+post http://{{baseURL}}/insert/template
+Content-Type: application/json
+
+{
+  "communicationChannel": "Email",
+  "edmChannel": "edmChannel",
+  "templateSubject": "templateSubject",
+  "templateContent": "templateContent",
+  "documentName": "documentName",
+  "documentUrl": "documentUrl",
+  "startEffectiveTime": "2019-11-11 12:12:12",
+  "lastEffectiveTime": "2019-11-11 12:12:12",
+  "templateLanguageCode": "chinese",
+  "templateCountryCode": "chiana",
+  "communicationChannel": "Email",
+  "templateAttributes": "templateAttributes",
+  "creator":"jerry"
+}
+
+
+###
+
+post http://{{baseURL}}/templates
+Content-Type: application/json
+
+{
+  "communicationChannel": "Email",
+  "uuid": "template-email-a4a156e52e3f4bb58ddb16af181279f5",
+  "eventTypeUuid": "event-email-20e7581e332f4d239ec19e97b4449304",
+  "templateLanguageCode": "chinese",
+  "templateCountryCode": "chiana",
+  "startEffectiveTime": "2012-11-11 12:12:12",
+  "lastEffectiveTime": "2030-11-11 12:12:12",
+  "templateAttributes": "templateAttributes"
+}
+
+###
+{
+  "code": "00",
+  "success": true,
+  "msg": "success",
+  "data": {
+    "uuid": "template-email-a4a156e52e3f4bb58ddb16af181279f5",
+    "eventTypeUuid": "event-email-20e7581e332f4d239ec19e97b4449304",
+    "edmChannel": "documentName",
+    "templateSubject": "templateSubject",
+    "templateContent": "templateContent",
+    "documentName": "documentName",
+    "documentUrl": "documentUrl",
+    "startEffectiveTime": "2019-11-06T03:11:11.000+0000",
+    "lastEffectiveTime": "2019-11-06T03:11:11.000+0000",
+    "templateLanguageCode": "chinese",
+    "templateCountryCode": "chiana",
+    "communicationChannel": "Email",
+    "templateAttributes": "templateAttributes",
+    "creator": "jerry",
+    "gmtCreated": "2019-11-21T07:50:21.703+0000",
+    "modifier": null,
+    "gmtModified": null,
+    "isDeleted": 1,
+    "isDeletedVal": 1
+  },
+  "time": "2019-11-21T07:50:21.724+0000"
+}
+
+###
+
+post http://{{baseURL}}/update/template
+
+{
+  "communicationChannel": "Sms",
+  "isDeleted": 1,
+  "uuid": "template-sms-7df3293b9c81412a810b02972908a909"
+}
+
+###
+
+post http://{{baseURL}}/update/template
+{
+  "communicationChannel": "Email",
+  "isDeleted": 1,
+  "uuid": "template-sms-7df3293b9c81412a810b02972908a909"
+}
+
+###
+
+post http://{{baseURL}}/update/template
+
+{
+  "communicationChannel": "WeChat",
+  "isDeleted": 1,
+  "uuid": "template-sms-7df3293b9c81412a810b02972908a909"
+}
+
+###
+
+http://localhost:3006/api/v2/template/event_type?communicationChannel=WeChat&eventTypeUuid=event-weChat-f1edf402fd704a01917917f7788ab2a6
+
+###
+http://localhost:3006/api/v2/template/uuid?communicationChannel=WeChat&uuid=template-weChat-13270b84c9f543aba9eed6f753ff57b4
+

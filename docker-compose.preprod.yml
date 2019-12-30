@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  message-hub-template:
+    image: registry-cn.subsidia.org/message-hub/message-hub-template
+    hostname: message-hub-template-preprod
+    volumes:
+    - /usr/local/message-hub-template-logs:/logs
+    template:
+      driver: json-file
+      options:
+        labels: app_name
+        max-file: '3'
+        max-size: 50m
+    labels:
+      io.rancher.container.pull_image: always
+      app_name: message-hub-template-preprod

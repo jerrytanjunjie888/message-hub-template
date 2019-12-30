@@ -1,0 +1,19 @@
+version: '3'
+services:
+  db:
+    image: postgres:11
+    volumes:
+      - C:/Program Files/PostgreSQL/11/data:/var/lib/postgresql/data4
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: database
+      POSTGRES_PASSWORD: test01
+      PGDATA: /var/lib/postgresql/data/pgdata4
+    ports:
+      - "5435:5432"
+    restart:
+      always
+networks:
+  postgresnetwork888:
+    driver: 'localhost'
+
